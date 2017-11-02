@@ -12,9 +12,30 @@ describe 'App' do
     Sinatra::Application
   end
 
-  it "says hello" do
-    get '/'
-    expect(last_response).to be_ok
-    expect(last_response.body).to include('Hello World')
+  describe "the pages themselves" do
+    it "is home page" do
+      get '/'
+      expect(last_response).to be_ok
+      expect(last_response.body).to include('Hello World')
+    end
+
+    it "page two" do
+      get '/two'
+      expect(last_response).to be_ok
+      expect(last_response.body).to include('Two')
+    end
+
+    it "page three" do
+      get '/three'
+      expect(last_response).to be_ok
+      expect(last_response.body).to include('Three')
+    end
+
+    it "page four" do
+      get '/four'
+      expect(last_response).to be_ok
+      expect(last_response.body).to include('Four')
+    end
   end
+
 end
