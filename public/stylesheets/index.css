@@ -1,9 +1,11 @@
 * {
   box-sizing: border-box;
-  margin: 0;
+  margin: 0 ;
   /*background-color: rgba(0, 0, 0, 0.1);*/
 }
 
+/* Layout Page Styling */
+/* Nav Bar Styling */
 .nav-bar {
   display: flex;
   flex-direction: row;
@@ -27,6 +29,73 @@ a.nav-btn:hover {
   color: blue;
 }
 
+/* All Page Styles */
 .container {
-  padding-top: 60px;
+  padding: 60px 20px 50px 20px;
+}
+
+.parallax {
+  height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.biggest {
+  font-size: 4em;
+  text-align: center;
+}
+
+/* Home Page */
+
+#home {
+  background-image: url('../img/brooke-lark.jpg');
+}
+
+.partner-preview {
+  display: flex;
+  align-items: center;
+}
+
+.partner-one, .partner-two {
+  max-width: 50%;
+}
+
+.contact-pretty {
+  max-width: 100%;
+}
+
+/*Floating Button */
+.img-responsive {
+  max-width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.img-wrapper {
+  position: relative;
+}
+
+.img-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.img-overlay:before {
+  content: ' ';
+  display: block;
+  height: 50%;
+}
+
+.meet-partner {
+  border: white 1px solid;
+  background-color: black;
+  text-decoration: none;
+  color: white;
+  padding: 5px;
 }
