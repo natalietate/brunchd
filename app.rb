@@ -5,14 +5,14 @@ get '/' do
   erb :index
 end
 
-get '/two' do
-  erb :two
+get '/about' do
+  erb :about
 end
 
-get '/three' do
-  erb :three
+get '/contact' do
+  erb :contact
 end
 
-get '/four' do
-  erb :four
+get '/partners' do
+  erb :partners
 end

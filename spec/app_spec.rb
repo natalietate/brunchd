@@ -12,7 +12,8 @@ describe 'App' do
     Sinatra::Application
   end
 
-  describe "the pages themselves" do
+  # simple testing of the routes
+  describe "routes for page nav" do
     it "is home page" do
       get '/'
       expect(last_response).to be_ok
