@@ -3,3 +3,30 @@
   margin: 0;
   /*background-color: rgba(0, 0, 0, 0.1);*/
 }
+
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  position: fixed;
+  background-color: white;
+  width: 100vw;
+}
+
+.nav-btn {
+  padding: 10px;
+}
+
+a.nav-btn {
+  text-decoration: none;
+  color: black;
+  font-family: 'Open Sans', sans-serif;
+}
+
+a.nav-btn:hover {
+  color: blue;
+}
+
+.container {
+  padding-top: 60px;
+}
