@@ -17,25 +17,25 @@ describe 'App' do
     it "is home page" do
       get '/'
       expect(last_response).to be_ok
-      expect(last_response.body).to include('Hello World')
+      expect(last_response.body).to include("This is Brunch'd.")
     end
 
-    it "page two" do
-      get '/two'
+    it "about page" do
+      get '/about'
       expect(last_response).to be_ok
-      expect(last_response.body).to include('Two')
+      expect(last_response.body).to include("About Brunch'd")
     end
 
-    it "page three" do
-      get '/three'
+    it "contact page" do
+      get '/contact'
       expect(last_response).to be_ok
-      expect(last_response.body).to include('Three')
+      expect(last_response.body).to include('Get in Touch')
     end
 
-    it "page four" do
-      get '/four'
+    it "partners page" do
+      get '/partners'
       expect(last_response).to be_ok
-      expect(last_response.body).to include('Four')
+      expect(last_response.body).to include('Meet our Partners')
     end
   end
 
