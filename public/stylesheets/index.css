@@ -35,7 +35,6 @@ a.nav-btn:hover {
 }
 
 .parallax {
-  height: 500px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -51,6 +50,7 @@ a.nav-btn:hover {
 
 #home {
   background-image: url('../img/brooke-lark.jpg');
+  height: 500px;
 }
 
 .partner-preview {
@@ -60,10 +60,6 @@ a.nav-btn:hover {
 
 .partner-one, .partner-two {
   max-width: 50%;
-}
-
-.contact-pretty {
-  max-width: 100%;
 }
 
 /*Floating Button */
@@ -92,10 +88,31 @@ a.nav-btn:hover {
   height: 50%;
 }
 
-.meet-partner {
+.meet-partner, .get-started {
   border: white 1px solid;
   background-color: black;
   text-decoration: none;
   color: white;
   padding: 5px;
+}
+
+.get-started {
+display: block;
+text-align: center;
+max-width: 20%;
+margin: 0 auto;
+margin-top: 10px;
+padding-top: 20px;
+padding-bottom: 20px;
+}
+
+/*About Page*/
+
+#about {
+  background-image: url('../img/brooke-lark.jpg');
+  height: 300px;
+}
+
+.about-brunch {
+  padding-top: 10px
 }
