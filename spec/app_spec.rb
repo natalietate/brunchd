@@ -17,7 +17,7 @@ describe 'App' do
     it "is home page" do
       get '/'
       expect(last_response).to be_ok
-      expect(last_response.body).to include("This is Brunch'd.")
+      expect(last_response.body).to include("Welcome... This is Brunch'd")
     end
 
     it "about page" do
