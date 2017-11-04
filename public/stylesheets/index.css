@@ -1,11 +1,13 @@
 * {
   box-sizing: border-box;
-  margin: 0 ;
+  margin: 0;
   /*background-color: rgba(0, 0, 0, 0.1);*/
 }
 
 /* Layout Page Styling */
+
 /* Nav Bar Styling */
+
 .nav-bar {
   display: flex;
   flex-direction: row;
@@ -13,6 +15,7 @@
   position: fixed;
   background-color: white;
   width: 100vw;
+  z-index: 500;
 }
 
 .nav-btn {
@@ -30,6 +33,7 @@ a.nav-btn:hover {
 }
 
 /* All Page Styles */
+
 .container {
   padding: 60px 20px 50px 20px;
 }
@@ -56,6 +60,7 @@ a.nav-btn:hover {
 .partner-preview {
   display: flex;
   align-items: center;
+
 }
 
 .partner-one, .partner-two {
@@ -63,6 +68,7 @@ a.nav-btn:hover {
 }
 
 /*Floating Button */
+
 .img-responsive {
   max-width: 50%;
   display: flex;
@@ -97,13 +103,13 @@ a.nav-btn:hover {
 }
 
 .get-started {
-display: block;
-text-align: center;
-max-width: 20%;
-margin: 0 auto;
-margin-top: 10px;
-padding-top: 20px;
-padding-bottom: 20px;
+  display: block;
+  text-align: center;
+  max-width: 20%;
+  margin: 0 auto;
+  margin-top: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 /*About Page*/
@@ -115,4 +121,65 @@ padding-bottom: 20px;
 
 .about-brunch {
   padding-top: 10px
+}
+
+/* About Page Gallery */
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5px;
+  align-items: center;
+  position: relative;
+}
+
+@media all and (max-width: 600px) {
+  .grid {
+    grid-template-columns: 50% 50%;
+  }
+}
+
+@media all and (max-width: 400px) {
+  .grid {
+    grid-template-columns: 100%;
+  }
+}
+
+.photo {
+  background: indigo;
+  color: white;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+
+.photo:hover {
+  transform: scale(1.1);
+  transition: all .2s ease-in-out;
+}
+
+
+
+#one {
+  background-image: url('../img/nathan-dumlao-sm.jpg');
+}
+
+#two {
+  background-image: url('../img/eaters-collective-sm.jpg');
+}
+
+#three {
+  background-image: url('../img/toa-heftiba-sm.jpg');
+}
+
+#four {
+  background-image: url('../img/david-lezcano-sm.jpg');
+}
+
+#five {
+  background-image: url('../img/ali-inay-sm.jpg');
+}
+
+#six {
+  background-image: url('../img/joseph-gonzalez.jpg');
 }
