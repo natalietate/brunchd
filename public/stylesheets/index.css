@@ -60,7 +60,6 @@ a.nav-btn:hover {
 .partner-preview {
   display: flex;
   align-items: center;
-
 }
 
 .partner-one, .partner-two {
@@ -158,8 +157,6 @@ a.nav-btn:hover {
   transition: all .2s ease-in-out;
 }
 
-
-
 #one {
   background-image: url('../img/nathan-dumlao-sm.jpg');
 }
@@ -182,4 +179,24 @@ a.nav-btn:hover {
 
 #six {
   background-image: url('../img/joseph-gonzalez.jpg');
+}
+
+/* Contact Page Styling */
+
+/* Contact Form */
+form {
+  padding: 20px;
+}
+
+input[type=text], #message {
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid blue;
+  border-radius: 3px;
+  outline: none;
+}
+
+input[type=text]:focus {
+  background-color: lightblue;
 }
