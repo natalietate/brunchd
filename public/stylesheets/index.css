@@ -200,6 +200,12 @@ input[type=text]:focus {
   background-color: #f9e195;
 }
 
+.reminder-one, .reminder-two {
+  background-color: #F5C020;
+  width: 30%;
+  text-align: center;
+}
+
 /* Partners Page Styling */
 
 #partners {
@@ -266,10 +272,4 @@ a.name {
   a.name {
     font-size: 2em;
   }
-}
-
-.reminder-one, .reminder-two {
-  background-color: #F5C020;
-  width: 30%;
-  text-align: center;
 }
