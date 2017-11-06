@@ -54,7 +54,7 @@ h1, h2, h3 {
 }
 
 body {
- font-family: 'Quicksand', sans-serif;
+  font-family: 'Quicksand', sans-serif;
 }
 
 /* Home Page */
@@ -181,6 +181,7 @@ body {
 }
 
 /* Contact Form */
+
 form {
   padding: 20px;
 }
