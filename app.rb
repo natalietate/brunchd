@@ -24,8 +24,8 @@ end
 post '/' do
 
   from = Email.new(email: params['email'])
-  to = Email.new(email: 'test@example.com')
-  subject = 'New Message from Someone on Brunch\'d.com'
+  to = Email.new(email: 'martin.nat@gmail.com')
+  subject = 'New Message from Someone on Brunchd'
   content = Content.new(type: 'text/plain', value: params['body'])
   mail = Mail.new(from, subject, to, content)
 
