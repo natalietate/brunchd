@@ -115,7 +115,7 @@ body {
   font-size: 1.5em;
 }
 
-.get-started:hover {
+.get-started:hover, .img-overlay:hover {
   transform: scale(1.1);
   transition: all .2s ease-in-out;
 }
@@ -135,6 +135,7 @@ body {
   grid-gap: 5px;
   align-items: center;
   position: relative;
+  padding: 20px 0px 20px 0px;
 }
 
 .photo {
@@ -183,7 +184,7 @@ body {
 /* Contact Form */
 
 form {
-  padding: 20px;
+  padding: 20px 0px 20px 0px;
 }
 
 input[type=text], #message {
