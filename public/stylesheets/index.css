@@ -267,3 +267,9 @@ a.name {
     font-size: 2em;
   }
 }
+
+.reminder-one, .reminder-two {
+  background-color: #F5C020;
+  width: 30%;
+  text-align: center;
+}

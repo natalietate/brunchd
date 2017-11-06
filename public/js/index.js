@@ -1,3 +1,28 @@
 /*jshint esversion: 6 */
 
-console.log('Hello world');
+const form = document.forms[0];
+const reminderOne = document.querySelector('.reminder-one');
+const reminderTwo = document.querySelector('.reminder-two');
+
+function isName() {
+  if (form.name.value == "") {
+    console.log("Fill out the name");
+    reminderOne.textContent = "Please enter your name!";
+  } else {
+    reminderOne.textContent = "";
+  }
+}
+
+function isValidEmail() {
+  if (form.email.value.includes("@")) {
+    reminderTwo.textContent = "";
+  } else {
+    reminderTwo.textContent = "Please enter a valid email address!";
+  }
+}
+
+form.addEventListener('submit', function(event) {
+  event.preventDefault();
+  isName();
+  isValidEmail();
+});
