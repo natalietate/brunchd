@@ -6,7 +6,6 @@ const reminderTwo = document.querySelector('.reminder-two');
 
 function isName() {
   if (form.name.value == "") {
-    console.log("Fill out the name");
     reminderOne.textContent = "Please enter your name!";
   } else {
     reminderOne.textContent = "";

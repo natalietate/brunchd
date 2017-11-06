@@ -11,3 +11,4 @@ gem 'rspec'
 gem 'rack'
 gem 'rack-test'
 gem 'pry', group: :development
+gem 'sendgrid-ruby'
