@@ -22,7 +22,6 @@ get '/partners' do
 end
 
 post '/' do
-
   from = Email.new(email: params['email'])
   to = Email.new(email: 'martin.nat@gmail.com')
   subject = 'New Message from Someone on Brunchd'
